@@ -159,11 +159,6 @@
                             <maximum>0xFFFFFFFF</maximum>
                         </range>
                     </register>
-                    <register>
-                        <name>_reserved</name>
-                        <description>Padding to make sure targets is an array</description>
-                        <addressOffset>0xffc</addressOffset>
-                    </register>
                 </cluster>
             </registers>
         </peripheral>
@@ -2173,12 +2168,6 @@
                             <!-- reserved bit 13..63 -->
                         </fields>
                     </register>
-                    <!-- reserved: 0xa0..0xff -->
-                    <register>
-                        <name>_reserved</name>
-                        <description>Padding to make structure size 256 bytes so that channels[] is an array</description>
-                        <addressOffset>0xf8</addressOffset>
-                    </register>
                 </cluster>
             </registers>
             <interrupt>
@@ -3836,14 +3825,6 @@
                                 </enumeratedValues>
                             </field>
                         </fields>
-                    </register>
-                    <register>
-                        <name>_reserved%s</name>
-                        <description>_RESERVED0</description>
-                        <addressOffset>0x38</addressOffset>
-                        <dim>2</dim>
-                        <dimIndex>0-1</dimIndex>
-                        <dimIncrement>0x4</dimIncrement>
                     </register>
                 </cluster>
                 <register>
